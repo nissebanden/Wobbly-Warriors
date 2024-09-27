@@ -23,13 +23,14 @@
         void ThrowBall()
         {
             GameObject newBall = Instantiate(ballPrefab, spawnPoint.position, spawnPoint.rotation);
+            newBall.AddComponent<Ball>(); // Attach Ball script if not already attached
             Rigidbody rb = newBall.GetComponent<Rigidbody>();
-    
+        
             if (rb != null)
             {
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
-    
+        
                 Vector3 targetPoint;
                 if (Physics.Raycast(ray, out hit))
                 {
@@ -39,11 +40,11 @@
                 {
                     targetPoint = ray.GetPoint(10); 
                 }
-    
+        
                 Vector3 direction = (targetPoint - spawnPoint.position).normalized;
                 rb.AddForce(direction * throwForce, ForceMode.Impulse);
             }
-    
-            Destroy(newBall, 10); 
+            
+            Destroy(newBall, 10);
+        }
     }
-}
