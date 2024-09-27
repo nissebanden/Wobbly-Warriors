@@ -1,5 +1,3 @@
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
 Shader "Drunk"
 {
 	Properties
@@ -24,7 +22,6 @@ Shader "Drunk"
 
 			float4 pixel_shader (float4 coord:SV_POSITION) : COLOR
 			{
-				// Flip Y coordinate to correct the upside-down issue
 				vector <float,2> uv = float2(coord.x / _ScreenParams.x, 1.0 - coord.y / _ScreenParams.y);
 
 				uv.x += cos(uv.y * 2.0 + _Time.g) * 0.05;
