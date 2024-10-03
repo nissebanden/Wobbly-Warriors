@@ -6,6 +6,15 @@ TagManager:
   tags:
   - Ball
   - Cup
+  - Ground
+  - ai_ball
+  - player_ball
+  - Cup1
+  - Cup2
+  - Cup3
+  - Cup4
+  - Cup5
+  - Cup6
   layers:
   - Default
   - TransparentFX

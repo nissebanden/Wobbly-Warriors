@@ -1,9 +1,10 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AIController
     - Ball
+    - Drunk
     - GameController
-    - drunk
     - goal
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -43,18 +44,24 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2312}
+      Script: {instanceID: 2296}
     - Class: 114
-      Script: {instanceID: 2782}
+      Script: {instanceID: 2766}
     - Class: 114
-      Script: {instanceID: 5100}
+      Script: {instanceID: 5084}
     - Class: 114
-      Script: {instanceID: 6508}
+      Script: {instanceID: 6492}
+    - Class: 114
+      Script: {instanceID: 7440}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 134
@@ -62,6 +69,8 @@ ScriptsOnlyBuild:
     - Class: 135
       Script: {instanceID: 0}
     - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -166,7 +175,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: eed4beeaade800eb6cda0d221e51118a
+      Hash: 988cf76b897f904a70d9507dcaf42ba0
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameController
@@ -592,10 +601,10 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 5dc546f3f32252c241ca94f86031afaf
+      Hash: 9eb2f05231115aedaab77ad9ca8111f5
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: drunk
+    className: Drunk
   - hash:
       serializedVersion: 2
       Hash: d82086405f46de14829f6b4bcbdd8fc9
@@ -748,7 +757,7 @@ ScriptsOnlyBuild:
     className: UnityOnTriggerEnter2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 996930dc05066bd15913fbc521cf1b51
+      Hash: e6a3d1ba6e1666f09e6c3936e19c6f5c
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Ball
@@ -878,6 +887,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 6441ddf7434a5ff6e92b67f32320681e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AIController
   - hash:
       serializedVersion: 2
       Hash: ff76cf6cf52b4db7b95af6ffadca9288
